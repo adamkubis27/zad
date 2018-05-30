@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="pl"><!--<![endif]-->
+  <head>
+    
+    
+    <title>GRAY WIZARD</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="styles/base.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--
+    <script type="text/javascript" src="src/js/jquery.js" ></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    -->
+
+
+    
+  </head>
+<body>
+    
+    <header>
+        <a href="/" class="header__logo">
+            <img src="svg/top_logo.svg" alt="GRAY WIZARD" />
+        </a>
+        <nav class="header__nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item"><a class="header-nav__link" href="/">Add a site</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="/">Support</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="/"><span class="icon icon-user_icon"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="wrapper">
+            <h1>Dodaj stronę</h1>
+            <p>Samodzielna Konfiguracja Tarczy nie jest skomplikowana i nie wymaga specjalistycznej wiedzy.</p>
+        </div>
+    </section>
+    <section class="domain-list">
+        <div class="wrapper">
+            <h2>Lista domen</h2>
+            <table class="domain-list__table">
+                <thead>
+                    <tr>
+                        <th>Domena/Subdomena</th>
+                        <th>Adres IP</th>
+                        <th>SSL</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><div class="hld-input add-domain"><input class="" type="text" value="onet.pl" placeholder="Domena/Subdomena" /></div></td>
+                        <td><div class="hld-input ip-box"><input type="text" value="123.123.123.12" placeholder="Adres IP" /></div></td>
+                        <td>
+                            <div class="combo-box js-open-combo-box">
+                                <div class="combo-box__item-active">No</div>
+                                <ul class="combo-box__list">
+                                    <li class="combo-box__item js-click-combo-box-item">No</li>
+                                    <li class="combo-box__item js-click-combo-box-item">Pink</li>
+                                    <li class="combo-box__item js-click-combo-box-item">Orange</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="detele-row"><span class="icon icon-delete_icon js-delete-row"></span></td>
+                    </tr>
+                    <tr class="js-clone-el is-hidden">
+                        <td><div class="hld-input add-domain"><input class="" type="text" value="" placeholder="Domena/Subdomena" /></div></td>
+                        <td><div class="hld-input ip-box"><input type="text" value="" placeholder="Adres IP" /></div></td>
+                        <td>
+                            <div class="combo-box js-open-combo-box">
+                                <div class="combo-box__item-active">No</div>
+                                <ul class="combo-box__list">
+                                    <li class="combo-box__item js-click-combo-box-item">No</li>
+                                    <li class="combo-box__item js-click-combo-box-item">Pink</li>
+                                    <li class="combo-box__item js-click-combo-box-item">Orange</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="detele-row"><span class="icon icon-delete_icon js-delete-row"></span></td>
+                    </tr>
+                    <tr class="hld-add-domain-tr">
+                        <td colspan="4"><div class="add-domain-button js-add-domain-button">Dodaj domene...</div></td>
+                    </tr>
+                    
+                
+                    <tr class="hld-btn-ready">
+                        <td colspan="4"><button class="btn btn-ready js-btn-ready">Gotowe<button></td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            
+            <div class="protection-package-list">
+                <h2 class="protection-package-list__title title">Wybierz pakiet ochrony</h2>
+                <div class="accordion js-accordion ui-accordion">
+                    <div class="accordion__head ui-accordion-header"><span class="accordion__title">Basic</span><span class="accordion__price"><strong>5</strong> PLN/miesiąc</span></div>
+                    <div class="accordion__desc ui-accordion-content">
+                        <article>
+                            <p><strong>Zawiera między innymi:</strong></p>
+                            <ul>
+                                <li>100Mbps ruchu generowanego przez stronę</li>
+                                <li>20Gbps Ochrony przed DDoS</li>
+                                <li>Obsługa SSL</li>
+                                <li>Wsparcie SLA </li>
+                                <li>Web application firewall (WAF)</li>
+                                <li>Statystyki i wykresy</li>
+                                <li>API</li>
+                                <li>24/7 Wsparcie E-mail</li>
+                            </ul>
+                        </article>
+                        <div class="accordion__summary">
+                            <a href="/" class="accordion__summary__link">Więcej informacji o tym i pozostałych pakietach <span class="icon icon-more_icon"></span></a>
+                            <button class="btn btn--this-package js-this-package">Wybieram<span class="days-free-info"><strong>10</strong> dni gratis</span></button></div>
+                    </div>
+                    
+                    <div class="accordion__head ui-accordion-header"><span class="accordion__title">Bussiness</span><span class="accordion__price"><strong>5</strong> PLN/miesiąc</span></div>
+                    <div class="accordion__desc ui-accordion-content">
+                        <article>
+                            <p><strong>Zawiera między innymi:</strong></p>
+                            <ul>
+                                <li>100Mbps ruchu generowanego przez stronę</li>
+                                <li>20Gbps Ochrony przed DDoS</li>
+                                <li>Obsługa SSL</li>
+                                <li>Wsparcie SLA </li>
+                                <li>100Mbps ruchu generowanego przez stronę</li>
+                        
+                                <li>Statystyki i wykresy</li>
+                                <li>API</li>
+                                <li>24/7 Wsparcie E-mail</li>
+                            </ul>
+                        </article>
+                        <div class="accordion__summary"><a href="/" class="accordion__summary__link">Więcej informacji o tym i pozostałych pakietach <span class="icon icon-more_icon"></span></a><button class="btn btn--this-package js-this-package">Wybieram</button></div>
+                    </div>
+                    
+                    <div class="accordion__head ui-accordion-header"><span class="accordion__title">Pro</span><span class="accordion__price"><strong>5</strong> PLN/miesiąc</span></div>
+                    <div class="accordion__desc ui-accordion-content">
+                        <article>
+                            <p><strong>Zawiera między innymi:</strong></p>
+                            <ul>
+                                
+                                <li>Wsparcie SLA </li>
+                                <li>Web application firewall (WAF)</li>
+                                <li>Statystyki i wykresy</li>
+                                <li>API</li>
+                                <li>24/7 Wsparcie E-mail</li>
+                            </ul>
+                        </article>
+                        <div class="accordion__summary"><a href="/" class="accordion__summary__link">Więcej informacji o tym i pozostałych pakietach <span class="icon icon-more_icon"></span></a><button class="btn btn--this-package js-this-package">Wybieram</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <h2 class="payment__title title">Autoryzuj swoją rejestrację i włącz ochronę</h2>
+                <div class="payment__details-info">
+                    <p>Spokojnie, nie obciążymy Twojej karty bez uprzedniej zgody.<br />
+                    Zawsze możesz zrezygnować.</p>
+                    <div class="payment__credit-card">
+                        <div class="payment__credit-card-box payment__credit-card__number"></div>
+                        <div class="payment__credit-card-box payment__credit-card__seciure-code"></div>
+                        <div class="payment__credit-card-box payment__credit-card__duration"></div>
+                        <div class="payment__credit-card-box payment__credit-card__name"></div>
+                        <div class="payment__credit-card-box payment__credit-card__surname"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__left">
+            <a href="/" class="footer__logo">
+                <img src="svg/footer_logo.svg" alt="GRAY WIZARD" />
+            </a>
+            <nav >
+                <ul class="footer__nav">
+                    <li><a href="/">Support</a></li>
+                    <li><a href="/">GrayWizzard.com</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__right">
+            <nav >
+                <ul class="footer__social">
+                    <li><a href="/" class="fb">Fb</a></li>
+                    <li><a href="/" class="twitter">Twitter</a></li>
+                    <li><a href="/" class="linkein">Linkein</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+<script>
+    $( function() {
+        $( '.js-accordion' ).accordion({
+            icons: false,
+            heightStyle: 'content'
+        });
+    
+
+        $('.js-open-combo-box').hover(function(){
+
+            const $this = $(this);
+            $('.combo-box__list', $this).stop(true, false).fadeIn(200);
+
+        }, function(){
+
+            const $this = $(this);
+            $('.combo-box__list', $this).addClass('is-hiding').stop(true, false).fadeOut(200, function(){
+                $('.combo-box__list').removeClass('is-hiding');
+            });
+
+        });
+
+        $('.js-click-combo-box-item').on('click', function(){
+            const $this = $(this);
+            const $html = $this.html();
+
+            $this.parent().siblings('.combo-box__item-active').html($html);
+        });
+
+        // $('.js-add-domain-button').on('click', function(){
+            
+        //     const $el = $('.js-clone-el').html();
+        //     // const $cloneEl = $el.cloneNode(true);
+
+        //     $('.domain-list__table').insertRow($el);
+        // });
+
+
+    });
+
+
+  </script>
+</body> 
+</html>
